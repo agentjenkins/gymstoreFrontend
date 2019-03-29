@@ -1,17 +1,23 @@
 <template>
   <div>
-    <h1>{{item}}</h1>
-    <h2>{{name}}</h2>
+    <ul id="kalle">
+      <li v-for="(item) in items" v-bind:key="item.name">
+        {{item.name}}
+      </li>
+
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'item',
+  name: 'Items',
   data () {
     return {
-      item: 'Bars',
-      name: 'superBar'
+      items: [
+        {name: 'chocklad'},
+        {name: 'Bar'}
+      ]
     }
   }
 }
