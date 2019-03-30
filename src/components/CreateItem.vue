@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'CreateItem',
   data () {
@@ -16,6 +18,8 @@ export default {
   methods: {
     post: function (event) {
       console.log('banan')
+      axios
+        .post('http://localhost:8080/items', {'name': 'banan'})
     }
   }
 }
