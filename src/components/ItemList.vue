@@ -1,10 +1,9 @@
 <template>
   <div>
-    <p>List</p>
+    <h1>Item List</h1>
     <ul id='itemList'>
       <li v-for="(item) in items" v-bind:key="item.id">{{item.name}}</li>
     </ul>
-    <p>{{items}}</p>
   </div>
 </template>
 
