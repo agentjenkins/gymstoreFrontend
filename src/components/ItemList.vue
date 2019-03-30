@@ -2,7 +2,7 @@
   <div>
     <p>List</p>
     <ul id='itemList'>
-      <li v-for="(item) in items" v-bind:key="item.name">{{item.name}}</li>
+      <li v-for="(item) in items" v-bind:key="item.id">{{item.name}}</li>
     </ul>
     <p>{{items}}</p>
   </div>
