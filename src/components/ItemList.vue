@@ -1,6 +1,7 @@
 <template>
   <div>
-    <ul id='kalle'>
+    <p>List</p>
+    <ul id='itemList'>
       <li v-for="(item) in items" v-bind:key="item.name">{{item.name}}</li>
     </ul>
     <p>{{items}}</p>

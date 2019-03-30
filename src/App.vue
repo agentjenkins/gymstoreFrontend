@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Items/>
+    <CreateItem/>
   </div>
 </template>
 
 <script>
 import Items from './components/ItemList'
+import CreateItem from './components/CreateItem'
 
 export default {
   name: 'App',
   components: {
-    Items
+    Items,
+    CreateItem
   }
 }
 </script>
