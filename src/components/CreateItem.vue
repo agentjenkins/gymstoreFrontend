@@ -1,6 +1,7 @@
 <template>
   <div id="createItem">
-    <p>button</p>
+    <h2>Create a new Item that is a Banana</h2>
+    <input v-model="itemNameToCreate" placeholder="enter a new item name">
     <button v-on:click="post">Post</button>
   </div>
 </template>
@@ -17,9 +18,9 @@ export default {
   },
   methods: {
     post: function (event) {
-      console.log('banan')
+      console.log(this.itemNameToCreate)
       axios
-        .post('http://localhost:8080/items', {'name': 'banan'})
+        .post('http://localhost:8080/items', {'name': this.itemNameToCreate})
     }
   }
 }
